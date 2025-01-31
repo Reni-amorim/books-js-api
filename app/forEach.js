@@ -1,4 +1,5 @@
 function exibirLivros(listaLivros) {
+    eInserirLivros.innerHTML = '';
     listaLivros.forEach(livro => {
         const livroDiv = `<div class="livro">
             <img src="${livro.imagem}" alt="${livro.titulo}">
@@ -7,6 +8,7 @@ function exibirLivros(listaLivros) {
             <p>Preço: R$${livro.preco}</p>
             <p>Categoria: ${livro.categoria}</p>
           </div>`;
+          
           eInserirLivros.innerHTML += livroDiv;
       })
 }

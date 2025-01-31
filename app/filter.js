@@ -1,8 +1,7 @@
-const botoes = document.querySelectorAll('.btn')
-botoes.forEach(btn => btn.addEventListener('click',filtrarLivros))
-function filtrarLivros() {
-    const eBtn = document.getElementById(this.id)
-    const categoria = eBtn.value
-    let livrosFiltrados = livros.filter(livro => livro.categoria == categoria)
-    console.table(livrosFiltrados)
-}
+document.querySelectorAll('.btn').forEach(btn => {
+ btn.addEventListener('click', function() {
+    const categoria = btn.value;
+    let livrosFiltrados = livros.filter(livro => livro.categoria === categoria);
+    exibirLivros(livrosFiltrados)
+ });
+});
