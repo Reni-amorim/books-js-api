@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Poppins';
+  background-color: #9c9c9c;
 }
 
 .wrap {
@@ -92,7 +93,7 @@ body {
 .livro__descricao {
   text-align: center;
   font-size: 18px;
-  color: var(--text-author-color);
+  color: var(--text-price-color);
   margin: 1rem 0;
 }
 
